@@ -1,0 +1,8 @@
+﻿<?xml version="1.0"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MdmUrl>http://localhost:5000/mdm</MdmUrl>
+  <ProvisioningApiUrl>https://release-console.mago.cloud/be/api/</ProvisioningApiUrl>
+  <GWAMUrl>https://release-gwam.mago.cloud/gwam_app/api</GWAMUrl>
+  <GWAMConsoleDomain>DOMAIN-01</GWAMConsoleDomain>
+  <AppId>MW</AppId>
+</Config>
