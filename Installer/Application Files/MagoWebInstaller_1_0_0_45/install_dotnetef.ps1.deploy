@@ -1,0 +1,12 @@
+write-host "checking dotnet ef installation"
+	
+$wingetSdk = winget install --id Microsoft.DotNet.SDK.6  -e -h --accept-source-agreements --accept-package-agreements >$null
+$version = .\PsExec.exe -accepteula -s -i dotnet ef --version 6.* 
+if ($lastexitcode -ne  0)
+{
+	write-host "installing dotnet ef"
+	.\PsExec.exe -accepteula -s -i dotnet tool install --global dotnet-ef >$null
+	.\PsExec.exe -accepteula -s -i setx PATH "%PATH%;C:\windows\system32\config\systemprofile\.dotnet\tools" >$null
+}
+
+
