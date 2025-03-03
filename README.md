@@ -1,5 +1,5 @@
 # magoweb-installer
-Internal tool for magoweb installing
+Tool for installing Magoweb
 
 You can find the clickonce latest version here
 
