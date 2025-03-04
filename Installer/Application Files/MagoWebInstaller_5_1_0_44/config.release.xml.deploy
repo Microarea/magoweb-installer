@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<MdmUrl>http://localhost:5050</MdmUrl>
+	<ProvisioningApiUrl>https://release-console.mago.cloud/be/api/</ProvisioningApiUrl>
+	<GWAMUrl>https://release-gwam.mago.cloud/gwam_app/api</GWAMUrl>
+	<GWAMConsoleDomain>DOMAIN-01</GWAMConsoleDomain>
+	<AppId>MW</AppId>
+	<MyMagoZucchUrl>https://mymago.zucchetti.com/OAuthService/OAuth2/</MyMagoZucchUrl>
+	<Microsoft_Authorization>https://login.microsoftonline.com</Microsoft_Authorization>
+	<Microsoft_Scope>openid offline_access profile email https://outlook.office.com/IMAP.AccessAsUser.All</Microsoft_Scope>
+	<Google_Scope>openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/gmail.send</Google_Scope>
+	<Microsoft_Smtp_Server>smtp.office365.com</Microsoft_Smtp_Server>
+	<Google_Smtp_Server>smtp.gmail.com</Google_Smtp_Server>
+</Config>
