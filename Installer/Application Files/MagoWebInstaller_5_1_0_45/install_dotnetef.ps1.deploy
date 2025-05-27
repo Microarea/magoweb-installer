@@ -1,0 +1,15 @@
+write-host "checking dotnet ef installation"
+	
+Invoke-WebRequest 'https://dotnet.microsoft.com/download/dotnet/scripts/v1/dotnet-install.ps1' -OutFile 'dotnet-install.ps1';
+./dotnet-install.ps1 -InstallDir '~/.dotnet' -Version '8.0.14' -Runtime 'dotnet' 
+./dotnet-install.ps1 -InstallDir '~/.dotnet' -Version '8.0.14' -Runtime 'aspnetcore'
+
+$version = .\PsExec.exe -accepteula -s -i dotnet ef --version 8.* 
+if ($lastexitcode -ne  0)
+{
+	write-host "installing dotnet ef"
+	.\PsExec.exe -accepteula -s -i dotnet tool install --global dotnet-ef  --version 6.*  >$null
+	.\PsExec.exe -accepteula -s -i setx PATH "%PATH%;C:\windows\system32\config\systemprofile\.dotnet\tools" >$null
+}
+
+
